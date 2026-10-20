@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#087f79">
-  <meta name="description" content="سياسة الخصوصية لتطبيقات الهاتف المحمول — Privacy Policy for mobile applications.">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+  <meta name="description" content="سياسة الخصوصية الرسمية لجميع تطبيقات Quran Karim | قرآن كريم على Google Play.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
   <link rel="canonical" href="https://soufianeissam007-png.github.io/mobile-apps-privacy-policy/">
-  <meta property="og:title" content="سياسة الخصوصية | Privacy Policy">
-  <meta property="og:description" content="سياسة خصوصية واضحة بالعربية والإنجليزية لتطبيقات الهاتف المحمول.">
+  <meta property="og:title" content="سياسة الخصوصية — Quran Karim | قرآن كريم">
+  <meta property="og:description" content="السياسة الرسمية لتطبيقات الهاتف المنشورة بواسطة Quran Karim | قرآن كريم.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://soufianeissam007-png.github.io/mobile-apps-privacy-policy/">
-  <title>سياسة الخصوصية | Privacy Policy</title>
+  <title>سياسة الخصوصية — Quran Karim | قرآن كريم</title>
   <style>
     :root {
       --teal-950: #063c3a;
@@ -116,6 +116,10 @@
     .hero {
       position: relative;
       overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(300px, .82fr);
+      align-items: center;
+      gap: clamp(28px, 5vw, 68px);
       padding: clamp(30px, 6vw, 72px);
       border-radius: 28px;
       color: #fff;
@@ -157,6 +161,8 @@
       line-height: 1.15;
     }
 
+    .hero-copy { position: relative; z-index: 2; min-width: 0; }
+
     .hero p {
       position: relative;
       z-index: 1;
@@ -165,6 +171,48 @@
       color: rgba(255, 255, 255, .86);
       font-size: clamp(1rem, 2vw, 1.15rem);
     }
+
+    .hero-visual {
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      min-height: 300px;
+      border: 1px solid rgba(255, 244, 207, .38);
+      border-radius: 25px;
+      background: rgba(255,255,255,.08);
+      box-shadow: 0 22px 50px rgba(0,0,0,.26), inset 0 1px rgba(255,255,255,.18);
+      transform: rotate(-1.2deg);
+    }
+
+    html[dir="ltr"] .hero-visual { transform: rotate(1.2deg); }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+      display: block;
+      object-fit: cover;
+      object-position: 58% center;
+    }
+
+    .visual-badge {
+      position: absolute;
+      inset-inline-start: 16px;
+      bottom: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      color: #fff;
+      background: rgba(5, 47, 44, .8);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 800;
+      backdrop-filter: blur(10px);
+    }
+
+    .visual-badge::before { content: "✓"; width: 21px; height: 21px; display: grid; place-items: center; color: var(--teal-950); background: var(--gold-100); border-radius: 50%; }
 
     .meta-row {
       position: relative;
@@ -228,6 +276,21 @@
       background: linear-gradient(145deg, #fff, #f1faf8);
     }
 
+    .summary-icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 13px;
+      color: #fff;
+      background: linear-gradient(145deg, var(--teal-700), var(--teal-900));
+      border: 1px solid rgba(255,255,255,.45);
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(8,127,121,.2);
+      font-size: 1rem;
+      font-weight: 900;
+    }
+
     .summary-card strong { display: block; margin-bottom: 4px; color: var(--teal-900); }
     .summary-card span { color: var(--muted); font-size: .9rem; }
 
@@ -254,6 +317,51 @@
       background: var(--gold-100);
       color: #574516;
     }
+
+    .developer-card {
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 18px;
+      margin: -18px 28px 0;
+      padding: 20px 24px;
+      border: 1px solid rgba(214, 168, 61, .48);
+      border-radius: 20px;
+      background: linear-gradient(105deg, #fff9e7, #fffefa 64%, #edf9f6);
+      box-shadow: 0 16px 42px rgba(6, 60, 58, .1);
+    }
+
+    .developer-card::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset-inline-end: -58px;
+      top: -74px;
+      width: 170px;
+      height: 170px;
+      border: 24px double rgba(214, 168, 61, .12);
+      border-radius: 50%;
+    }
+
+    .developer-seal {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      color: #fff;
+      background: linear-gradient(145deg, var(--gold-500), var(--gold-700));
+      box-shadow: 0 8px 20px rgba(156, 106, 16, .22);
+      font-size: 22px;
+    }
+
+    .developer-copy small { display: block; color: #76683e; font-size: .8rem; }
+    .developer-copy { min-width: 0; }
+    .developer-copy strong { display: block; color: var(--teal-950); font-size: 1.15rem; line-height: 1.5; overflow-wrap: normal; word-break: normal; }
+    .developer-status { padding: 7px 12px; border-radius: 999px; color: var(--teal-900); background: var(--teal-100); font-size: .8rem; font-weight: 800; white-space: nowrap; }
 
     .table-wrap { max-width: 100%; overflow-x: auto; margin-top: 16px; border: 1px solid var(--line); border-radius: 15px; }
     table { width: 100%; min-width: 640px; border-collapse: collapse; background: #fff; }
@@ -289,6 +397,10 @@
     [hidden] { display: none !important; }
 
     @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-visual { min-height: 245px; transform: none; }
+      html[dir="ltr"] .hero-visual { transform: none; }
+      .hero-visual img { min-height: 245px; max-height: 330px; }
       .layout, html[dir="ltr"] .layout { grid-template-columns: 1fr; }
       html[dir="ltr"] .content, html[dir="ltr"] .side { order: initial; }
       .side { position: static; }
@@ -296,15 +408,33 @@
       .toc { columns: 2; column-gap: 24px; }
     }
 
+    @media (max-width: 760px) {
+      .developer-card {
+        grid-template-columns: auto minmax(0, 1fr);
+        margin: -14px 14px 0;
+        padding: 18px;
+      }
+      .developer-status {
+        grid-column: 1 / -1;
+        width: 100%;
+        white-space: normal;
+        text-align: center;
+      }
+    }
+
     @media (max-width: 560px) {
       .topbar-inner, .page { width: min(100% - 20px, 1120px); }
       .brand span:last-child { display: none; }
       .hero { padding: 28px 22px; border-radius: 20px; }
+      .hero-visual { min-height: 205px; border-radius: 19px; }
+      .hero-visual img { min-height: 205px; max-height: 235px; }
       .content { padding: 22px 18px; border-radius: 18px; }
       .toc { columns: 1; }
       .contact-card { align-items: stretch; flex-direction: column; }
       .contact-card a { text-align: center; }
       .print-button { display: none; }
+      .developer-card { margin: -12px 8px 0; padding: 16px; }
+      .developer-status { grid-column: 1 / -1; text-align: center; }
     }
 
     @media print {
@@ -317,13 +447,396 @@
       a { color: inherit; text-decoration: none; }
     }
   </style>
+  <style>
+    /* Premium visual system — emerald, gold, and warm ivory */
+    :root {
+      --teal-950: #032e2b;
+      --teal-900: #064b46;
+      --teal-700: #078a80;
+      --teal-500: #16b9aa;
+      --teal-100: #e0f7f2;
+      --gold-700: #9a6508;
+      --gold-500: #e2b33e;
+      --gold-100: #fff4ca;
+      --ink: #153936;
+      --muted: #617a76;
+      --paper: #fffdf7;
+      --line: #d8ebe6;
+      --shadow: 0 24px 70px rgba(3, 46, 43, .12);
+    }
+
+    body {
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(226, 179, 62, .20), transparent 24rem),
+        radial-gradient(circle at 96% 7%, rgba(22, 185, 170, .18), transparent 31rem),
+        linear-gradient(180deg, #edf8f5 0, #f8fbf9 44rem, #f3f8f6 100%);
+      font-family: "Segoe UI Variable", "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+    }
+
+    .topbar {
+      border-bottom: 1px solid rgba(226, 179, 62, .34);
+      background: rgba(3, 38, 35, .92);
+      box-shadow: 0 10px 35px rgba(1, 33, 30, .18);
+      backdrop-filter: blur(18px) saturate(145%);
+    }
+
+    .topbar-inner { min-height: 72px; }
+
+    .brand {
+      gap: 12px;
+      font-size: .98rem;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(255, 228, 145, .64);
+      border-radius: 14px;
+      color: #ffe08a;
+      background: linear-gradient(145deg, rgba(255,255,255,.15), rgba(226,179,62,.08));
+      box-shadow: inset 0 1px rgba(255,255,255,.18), 0 8px 22px rgba(0,0,0,.18);
+    }
+
+    .brand-mark svg { width: 25px; height: 25px; display: block; }
+
+    .actions {
+      padding: 4px;
+      gap: 3px;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 999px;
+      background: rgba(255,255,255,.055);
+    }
+
+    button {
+      min-height: 38px;
+      padding: 6px 14px;
+      border-color: transparent;
+      background: transparent;
+      font-size: .86rem;
+    }
+
+    button[aria-pressed="true"] {
+      color: #173b37;
+      background: linear-gradient(135deg, #fff7d8, #e7bb4e);
+      border-color: rgba(255,255,255,.45);
+      box-shadow: 0 5px 15px rgba(0,0,0,.17);
+    }
+
+    .page { width: min(1180px, calc(100% - 36px)); margin-top: 38px; }
+
+    .hero {
+      min-height: 535px;
+      display: flex;
+      align-items: center;
+      padding: clamp(42px, 6.8vw, 82px);
+      border: 1px solid rgba(255, 225, 133, .48);
+      border-radius: 36px;
+      isolation: isolate;
+      background-image:
+        linear-gradient(90deg, rgba(2, 31, 29, .99) 0%, rgba(3, 50, 46, .96) 31%, rgba(4, 62, 56, .76) 53%, rgba(3, 38, 35, .09) 78%),
+        url('assets/privacy-shield-hero.png');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 35px 90px rgba(2, 45, 42, .25), inset 0 1px rgba(255,255,255,.18);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 15px;
+      z-index: -1;
+      border: 1px solid rgba(255, 220, 112, .25);
+      border-radius: 26px;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      width: auto;
+      height: auto;
+      border: 0;
+      border-radius: inherit;
+      background: linear-gradient(180deg, rgba(255,255,255,.055), transparent 38%, rgba(0,0,0,.19));
+      transform: none;
+    }
+
+    .hero-copy {
+      width: min(585px, 58%);
+      margin-right: auto;
+      margin-left: 0;
+      padding: 5px 0;
+      text-shadow: 0 2px 18px rgba(0,0,0,.34);
+    }
+
+    #arPanel .hero-copy { text-align: right; }
+    #enPanel .hero-copy { text-align: left; }
+
+    .eyebrow {
+      margin-bottom: 17px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 223, 124, .30);
+      border-radius: 999px;
+      color: #ffe49a;
+      background: rgba(255,255,255,.07);
+      box-shadow: inset 0 1px rgba(255,255,255,.10);
+      font-size: .78rem;
+      letter-spacing: .08em;
+      backdrop-filter: blur(8px);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #f4c956;
+      box-shadow: 0 0 0 5px rgba(244,201,86,.14), 0 0 18px #f4c956;
+    }
+
+    .hero h1 {
+      max-width: 570px;
+      font-size: clamp(2.6rem, 5.8vw, 5.1rem);
+      font-weight: 800;
+      letter-spacing: -.045em;
+      line-height: 1.04;
+    }
+
+    #arPanel .hero h1 { letter-spacing: -.025em; }
+
+    .hero p {
+      max-width: 570px;
+      margin-top: 24px;
+      color: rgba(255,255,255,.88);
+      font-size: clamp(1.02rem, 1.8vw, 1.22rem);
+      line-height: 1.9;
+    }
+
+    .hero strong { color: #ffe49a; }
+    .hero-visual { display: none; }
+
+    .meta-row { gap: 8px; margin-top: 29px; }
+    .meta-chip {
+      padding: 7px 12px;
+      border-color: rgba(255,255,255,.16);
+      color: rgba(255,255,255,.86);
+      background: rgba(2,28,26,.38);
+      font-size: .82rem;
+      box-shadow: inset 0 1px rgba(255,255,255,.07);
+      backdrop-filter: blur(8px);
+    }
+
+    .developer-card {
+      margin: -32px 46px 0;
+      padding: 22px 26px;
+      border-color: rgba(216, 164, 35, .48);
+      border-radius: 24px;
+      background:
+        linear-gradient(110deg, rgba(255,248,220,.99), rgba(255,255,252,.99) 55%, rgba(229,248,243,.99)),
+        #fff;
+      box-shadow: 0 24px 60px rgba(3, 46, 43, .16), inset 0 1px #fff;
+    }
+
+    .developer-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #e4b83f 20%, #0ca092 58%, transparent);
+    }
+
+    .developer-card::after { opacity: .6; }
+
+    .developer-seal {
+      width: 56px;
+      height: 56px;
+      border: 1px solid rgba(255,255,255,.65);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #0ea194, #04514b);
+      box-shadow: 0 12px 28px rgba(4,81,75,.25), inset 0 1px rgba(255,255,255,.28);
+    }
+
+    .developer-seal svg { width: 31px; height: 31px; display: block; }
+    .developer-copy small { color: #80692e; font-weight: 700; letter-spacing: .01em; }
+    .developer-copy strong { margin-top: 2px; font-size: 1.25rem; }
+    .developer-status {
+      padding: 9px 14px;
+      border: 1px solid rgba(7,138,128,.14);
+      color: #055b54;
+      background: rgba(224,247,242,.82);
+    }
+
+    .layout { gap: 28px; margin-top: 32px; }
+    .content, .side-card {
+      border-color: rgba(211, 232, 226, .95);
+      background: rgba(255, 254, 250, .94);
+      box-shadow: 0 20px 55px rgba(3,46,43,.075), inset 0 1px rgba(255,255,255,.8);
+      backdrop-filter: blur(10px);
+    }
+
+    .content { position: relative; overflow: hidden; border-radius: 28px; }
+    .content::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: linear-gradient(90deg, #0ca092, #e6b943 50%, #0ca092);
+    }
+
+    .side-card { padding: 23px; border-radius: 24px; }
+    .side h2 { padding-bottom: 12px; border-bottom: 1px solid var(--line); font-size: 1.04rem; }
+    .toc { counter-reset: toc; }
+    .toc li { counter-increment: toc; }
+    .toc a {
+      position: relative;
+      padding: 7px 12px 7px 6px;
+      border-radius: 10px;
+      transition: color .2s ease, background .2s ease, transform .2s ease;
+    }
+    html[dir="ltr"] .toc a { padding: 7px 6px 7px 12px; }
+    .toc a:hover { background: var(--teal-100); transform: translateX(-2px); }
+    html[dir="ltr"] .toc a:hover { transform: translateX(2px); }
+
+    .summary { gap: 15px; margin-bottom: 40px; }
+    .summary-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 170px;
+      padding: 22px;
+      border-color: rgba(7,138,128,.15);
+      border-radius: 21px;
+      background: linear-gradient(145deg, #ffffff, #f0faf7);
+      box-shadow: 0 12px 30px rgba(3,46,43,.07);
+    }
+
+    .summary-card::after {
+      content: "";
+      position: absolute;
+      inset: auto -30px -45px auto;
+      width: 110px;
+      height: 110px;
+      border: 18px double rgba(226,179,62,.10);
+      border-radius: 50%;
+    }
+
+    .summary-icon {
+      width: 46px;
+      height: 46px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(255,230,155,.45);
+      border-radius: 15px;
+      background: linear-gradient(145deg, #0ca092, #044d47);
+      box-shadow: 0 10px 22px rgba(4,81,75,.22), inset 0 1px rgba(255,255,255,.24);
+    }
+    .summary-icon svg { width: 24px; height: 24px; display: block; }
+    .summary-card strong { position: relative; z-index: 1; color: #064f49; font-size: 1.03rem; }
+    .summary-card span:last-child { position: relative; z-index: 1; line-height: 1.7; }
+
+    section + section { margin-top: 44px; padding-top: 36px; }
+    h2 { position: relative; padding-inline-start: 22px; }
+    h2::before {
+      content: "";
+      position: absolute;
+      inset-inline-start: 0;
+      top: .33em;
+      width: 7px;
+      height: 1.05em;
+      border-radius: 999px;
+      background: linear-gradient(180deg, #e7b941, #0a9488);
+      box-shadow: 0 4px 12px rgba(7,138,128,.16);
+    }
+
+    .notice {
+      padding: 19px 20px;
+      border: 1px solid rgba(226,179,62,.35);
+      border-inline-start: 5px solid var(--gold-500);
+      border-radius: 15px;
+      background: linear-gradient(135deg, #fff7d9, #fffdf3);
+      box-shadow: 0 8px 22px rgba(154,101,8,.07);
+    }
+
+    .table-wrap { border-radius: 18px; box-shadow: 0 10px 28px rgba(3,46,43,.05); }
+    th { background: linear-gradient(135deg, #dcf5ef, #edf9f6); }
+
+    .contact-card {
+      padding: 24px;
+      border-color: rgba(7,138,128,.22);
+      border-radius: 21px;
+      background: linear-gradient(135deg, #e1f7f2, #fff8dd);
+    }
+
+    .contact-card a {
+      padding: 11px 18px;
+      background: linear-gradient(135deg, #0ca092, #05534d);
+      box-shadow: 0 9px 22px rgba(4,81,75,.20);
+    }
+
+    footer { padding-top: 34px; }
+
+    @media (max-width: 850px) {
+      .hero {
+        min-height: 610px;
+        align-items: flex-end;
+        padding: 40px;
+        background-image:
+          linear-gradient(180deg, rgba(2,31,29,.10) 0%, rgba(2,31,29,.36) 42%, rgba(2,31,29,.97) 72%, rgba(2,31,29,.99) 100%),
+          url('assets/privacy-shield-hero.png');
+        background-position: 61% center;
+      }
+      .hero-copy { width: 100%; max-width: 650px; margin: 0; }
+      .hero h1 { font-size: clamp(2.65rem, 10vw, 4.5rem); }
+      .layout, html[dir="ltr"] .layout { grid-template-columns: 1fr; }
+      .side { position: static; }
+      .summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 650px) {
+      .topbar-inner { min-height: 64px; }
+      .brand-mark { width: 38px; height: 38px; }
+      .actions { padding: 3px; }
+      button { min-height: 34px; padding: 5px 10px; font-size: .78rem; }
+      .page { width: min(100% - 20px, 1180px); margin-top: 18px; }
+      .hero {
+        min-height: 610px;
+        padding: 32px 24px;
+        border-radius: 27px;
+        background-position: 61% center;
+      }
+      .hero::before { inset: 9px; border-radius: 20px; }
+      .hero h1 { font-size: clamp(2.55rem, 13vw, 3.75rem); }
+      .hero p { font-size: .98rem; line-height: 1.8; }
+      .meta-row { margin-top: 22px; }
+      .meta-chip { padding: 6px 9px; font-size: .72rem; }
+      .developer-card { margin: -20px 10px 0; padding: 17px; border-radius: 20px; }
+      .developer-seal { width: 49px; height: 49px; border-radius: 16px; }
+      .developer-copy strong { font-size: 1.05rem; }
+      .layout { margin-top: 22px; }
+      .content { padding: 27px 20px; border-radius: 22px; }
+      .summary { grid-template-columns: 1fr; }
+      .summary-card { min-height: auto; padding: 20px; }
+      .side-card { border-radius: 20px; }
+      .contact-card { padding: 20px; }
+    }
+
+    @media (max-width: 420px) {
+      .brand span:last-child { display: none; }
+      .print-button { display: none; }
+      .hero { min-height: 590px; padding: 27px 21px; }
+      .eyebrow { font-size: .7rem; }
+      .developer-status { font-size: .74rem; }
+    }
+  </style>
 </head>
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <div class="brand" aria-label="Privacy Policy">
-        <span class="brand-mark" aria-hidden="true">◆</span>
-        <span data-ar="مركز الخصوصية" data-en="Privacy Center">مركز الخصوصية</span>
+      <div class="brand" aria-label="Quran Karim privacy policy">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4.5 39 10v11.2c0 10.3-6.1 18.2-15 22.3-8.9-4.1-15-12-15-22.3V10L24 4.5Z" stroke="currentColor" stroke-width="2.6"/><path d="M29.5 15.3a9.3 9.3 0 1 0 3.1 14.6 8.2 8.2 0 1 1-3.1-14.6Z" fill="currentColor"/></svg></span>
+        <span>Quran Karim | قرآن كريم</span>
       </div>
       <div class="actions" aria-label="Language and print controls">
         <button type="button" id="arButton" aria-pressed="true">العربية</button>
@@ -336,27 +849,43 @@
   <main class="page">
     <div id="arPanel" lang="ar" dir="rtl">
       <section class="hero" aria-labelledby="ar-title">
-        <p class="eyebrow">الخصوصية والشفافية</p>
-        <h1 id="ar-title">سياسة الخصوصية</h1>
-        <p>تنطبق هذه السياسة على جميع تطبيقات الهاتف المحمول التي ننشرها والتي تعرض رابطاً إلى هذه الصفحة. نوضح هنا، بلغة مباشرة، البيانات التي قد تتم معالجتها ولماذا وكيف يمكنك التحكم فيها.</p>
-        <div class="meta-row">
-          <span class="meta-chip">آخر تحديث: 16 أكتوبر 2026</span>
-          <span class="meta-chip">سارية من: 16 أكتوبر 2026</span>
-          <span class="meta-chip">العربية · English</span>
+        <div class="hero-copy">
+          <p class="eyebrow">الخصوصية والشفافية</p>
+          <h1 id="ar-title">سياسة الخصوصية</h1>
+          <p>السياسة الرسمية لجميع تطبيقات الهاتف المحمول المنشورة على Google Play بواسطة المطوّر <strong>Quran Karim | قرآن كريم</strong> والتي تعرض رابطاً إلى هذه الصفحة.</p>
+          <div class="meta-row">
+            <span class="meta-chip">آخر تحديث: 21 أكتوبر 2026</span>
+            <span class="meta-chip">سارية من: 21 أكتوبر 2026</span>
+            <span class="meta-chip">العربية · English</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/privacy-shield-hero.png" alt="">
+          <span class="visual-badge">حماية وشفافية</span>
         </div>
       </section>
+
+      <div class="developer-card" aria-label="هوية المطور والناشر">
+        <span class="developer-seal" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4.5 39 10v11.2c0 10.3-6.1 18.2-15 22.3-8.9-4.1-15-12-15-22.3V10L24 4.5Z" stroke="white" stroke-width="2.6"/><path d="m16.5 24.4 5 5 10.5-11" stroke="#ffe398" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="developer-copy">
+          <small>اسم المطوّر والناشر المطابق لمتجر Google Play</small>
+          <strong>Quran Karim | قرآن كريم</strong>
+        </div>
+        <span class="developer-status">تغطي جميع تطبيقاتنا المرتبطة بهذه الصفحة</span>
+      </div>
 
       <div class="layout">
         <article class="content">
           <div class="summary" aria-label="ملخص الخصوصية">
-            <div class="summary-card"><strong>لا نبيع بياناتك</strong><span>لا نبيع المعلومات الشخصية للمستخدمين.</span></div>
-            <div class="summary-card"><strong>بيانات محلية</strong><span>المفضلة والإعدادات والتنزيلات تبقى عادةً على جهازك.</span></div>
-            <div class="summary-card"><strong>تحكم واضح</strong><span>يمكنك إدارة الموافقة والإعلانات والصلاحيات من التطبيق والجهاز.</span></div>
+            <div class="summary-card"><span class="summary-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 27 7v8.2c0 7.5-4.5 11.9-11 14.8C9.5 27.1 5 22.7 5 15.2V7l11-4Z" stroke="white" stroke-width="2"/><path d="m10.5 16.2 3.5 3.5 7.8-8" stroke="#ffe398" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong>لا نبيع بياناتك</strong><span>لا نبيع المعلومات الشخصية للمستخدمين.</span></div>
+            <div class="summary-card"><span class="summary-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="4" width="20" height="24" rx="4" stroke="white" stroke-width="2"/><path d="M12 8h8M11 23h10" stroke="#ffe398" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="15" r="3" stroke="white" stroke-width="2"/></svg></span><strong>بيانات محلية</strong><span>المفضلة والإعدادات والتنزيلات تبقى عادةً على جهازك.</span></div>
+            <div class="summary-card"><span class="summary-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 9h18M7 16h18M7 23h18" stroke="white" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="9" r="3" fill="#ffe398"/><circle cx="21" cy="16" r="3" fill="#ffe398"/><circle cx="15" cy="23" r="3" fill="#ffe398"/></svg></span><strong>تحكم واضح</strong><span>يمكنك إدارة الموافقة والإعلانات والصلاحيات من التطبيق والجهاز.</span></div>
           </div>
 
           <section id="ar-scope">
-            <h2>1. نطاق السياسة</h2>
-            <p>تغطي هذه السياسة التطبيقات التي تشير إليها مباشرةً. قد تختلف الخصائص ومزودو الخدمات من تطبيق إلى آخر؛ لذلك لا يستخدم كل تطبيق بالضرورة جميع الخدمات المذكورة أدناه. إذا احتاج تطبيق معيّن إلى معالجة إضافية للبيانات، فسيعرض إفصاحاً مناسباً داخل التطبيق أو في صفحة المتجر.</p>
+            <h2>1. هوية المطوّر ونطاق السياسة</h2>
+            <p>الجهة التي تنشر التطبيقات المشمولة بهذه السياسة والمسؤولة عنها هي <strong>Quran Karim | قرآن كريم</strong>، وهو اسم المطوّر الظاهر في صفحة Google Play. تغطي هذه السياسة جميع تطبيقات الهاتف التي ننشرها تحت هذا الاسم والتي تشير مباشرةً إلى هذه الصفحة.</p>
+            <p>قد تختلف الخصائص ومزودو الخدمات من تطبيق إلى آخر؛ لذلك لا يستخدم كل تطبيق بالضرورة جميع الخدمات المذكورة أدناه. إذا احتاج تطبيق معيّن إلى معالجة إضافية للبيانات، فسيعرض إفصاحاً مناسباً داخل التطبيق أو في صفحة المتجر.</p>
             <div class="notice">لا تتطلب معظم تطبيقاتنا إنشاء حساب. إذا أتاح تطبيق معيّن حسابات للمستخدمين، فسنوضح البيانات المرتبطة بالحساب وطريقة طلب حذفه داخل ذلك التطبيق وفي صفحة المتجر.</div>
           </section>
 
@@ -471,10 +1000,10 @@
 
           <section id="ar-contact">
             <h2>13. التواصل معنا</h2>
-            <p>للاستفسارات والطلبات المتعلقة بالخصوصية، تواصل معنا عبر البريد الإلكتروني. يُستحسن ذكر اسم التطبيق ونوع الجهاز ووصف الطلب دون إرسال بيانات حساسة غير ضرورية.</p>
+            <p>المطوّر المسؤول عن التطبيقات وهذه السياسة هو <strong>Quran Karim | قرآن كريم</strong>. للاستفسارات والطلبات المتعلقة بالخصوصية، تواصل معنا عبر البريد الإلكتروني واذكر اسم التطبيق ونوع الطلب دون إرسال بيانات حساسة غير ضرورية.</p>
             <div class="contact-card">
-              <div><strong>بريد الخصوصية والدعم</strong><br><span dir="ltr">1995applications@gmail.com</span></div>
-              <a href="mailto:1995applications@gmail.com?subject=Privacy%20Request">إرسال رسالة</a>
+              <div><strong>Quran Karim | قرآن كريم</strong><br><span dir="ltr">1995applications@gmail.com</span></div>
+              <a href="mailto:1995applications@gmail.com?subject=Privacy%20Request">إرسال طلب خصوصية</a>
             </div>
           </section>
         </article>
@@ -483,7 +1012,7 @@
           <nav class="side-card">
             <h2>في هذه الصفحة</h2>
             <ol class="toc">
-              <li><a href="#ar-scope">نطاق السياسة</a></li>
+              <li><a href="#ar-scope">هوية المطوّر والنطاق</a></li>
               <li><a href="#ar-data">البيانات</a></li>
               <li><a href="#ar-use">الاستخدام</a></li>
               <li><a href="#ar-permissions">الصلاحيات</a></li>
@@ -503,27 +1032,43 @@
 
     <div id="enPanel" lang="en" dir="ltr" hidden>
       <section class="hero" aria-labelledby="en-title">
-        <p class="eyebrow">Privacy &amp; transparency</p>
-        <h1 id="en-title">Privacy Policy</h1>
-        <p>This policy applies to all mobile applications we publish that display a link to this page. It explains, in plain language, what data may be processed, why it is processed, and the choices available to you.</p>
-        <div class="meta-row">
-          <span class="meta-chip">Last updated: October 16, 2026</span>
-          <span class="meta-chip">Effective: October 16, 2026</span>
-          <span class="meta-chip">العربية · English</span>
+        <div class="hero-copy">
+          <p class="eyebrow">Privacy &amp; transparency</p>
+          <h1 id="en-title">Privacy Policy</h1>
+          <p>The official policy for all mobile applications published on Google Play by <strong>Quran Karim | قرآن كريم</strong> that link to this page.</p>
+          <div class="meta-row">
+            <span class="meta-chip">Last updated: October 21, 2026</span>
+            <span class="meta-chip">Effective: October 21, 2026</span>
+            <span class="meta-chip">العربية · English</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="assets/privacy-shield-hero.png" alt="">
+          <span class="visual-badge">Protected &amp; transparent</span>
         </div>
       </section>
+
+      <div class="developer-card" aria-label="Developer and publisher identity">
+        <span class="developer-seal" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 4.5 39 10v11.2c0 10.3-6.1 18.2-15 22.3-8.9-4.1-15-12-15-22.3V10L24 4.5Z" stroke="white" stroke-width="2.6"/><path d="m16.5 24.4 5 5 10.5-11" stroke="#ffe398" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <div class="developer-copy">
+          <small>Developer and publisher name matching the Google Play listing</small>
+          <strong>Quran Karim | قرآن كريم</strong>
+        </div>
+        <span class="developer-status">Covers all our apps linked to this page</span>
+      </div>
 
       <div class="layout">
         <article class="content">
           <div class="summary" aria-label="Privacy summary">
-            <div class="summary-card"><strong>We do not sell your data</strong><span>We do not sell users' personal information.</span></div>
-            <div class="summary-card"><strong>Local data</strong><span>Favorites, settings, and downloads generally remain on your device.</span></div>
-            <div class="summary-card"><strong>Clear controls</strong><span>You can manage consent, ads, and permissions in the app and device settings.</span></div>
+            <div class="summary-card"><span class="summary-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 27 7v8.2c0 7.5-4.5 11.9-11 14.8C9.5 27.1 5 22.7 5 15.2V7l11-4Z" stroke="white" stroke-width="2"/><path d="m10.5 16.2 3.5 3.5 7.8-8" stroke="#ffe398" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong>We do not sell your data</strong><span>We do not sell users' personal information.</span></div>
+            <div class="summary-card"><span class="summary-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="4" width="20" height="24" rx="4" stroke="white" stroke-width="2"/><path d="M12 8h8M11 23h10" stroke="#ffe398" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="15" r="3" stroke="white" stroke-width="2"/></svg></span><strong>Local data</strong><span>Favorites, settings, and downloads generally remain on your device.</span></div>
+            <div class="summary-card"><span class="summary-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 9h18M7 16h18M7 23h18" stroke="white" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="9" r="3" fill="#ffe398"/><circle cx="21" cy="16" r="3" fill="#ffe398"/><circle cx="15" cy="23" r="3" fill="#ffe398"/></svg></span><strong>Clear controls</strong><span>You can manage consent, ads, and permissions in the app and device settings.</span></div>
           </div>
 
           <section id="en-scope">
-            <h2>1. Scope of this policy</h2>
-            <p>This policy covers applications that link directly to it. Features and service providers may differ between apps, so not every app necessarily uses every service listed below. If a particular app needs additional data processing, it will provide an appropriate disclosure in the app or on its store page.</p>
+            <h2>1. Developer identity and scope</h2>
+            <p>The entity publishing and responsible for the applications covered by this policy is <strong>Quran Karim | قرآن كريم</strong>, the developer name displayed on Google Play. This policy covers all mobile applications published under that name that link directly to this page.</p>
+            <p>Features and service providers may differ between apps, so not every app necessarily uses every service listed below. If a particular app needs additional data processing, it will provide an appropriate disclosure in the app or on its store page.</p>
             <div class="notice">Most of our apps do not require an account. If a specific app offers user accounts, we will explain the account-related data and deletion process in that app and on its store page.</div>
           </section>
 
@@ -638,10 +1183,10 @@
 
           <section id="en-contact">
             <h2>13. Contact us</h2>
-            <p>For privacy questions and requests, contact us by email. Please include the app name, device type, and a description of your request without sending unnecessary sensitive information.</p>
+            <p>The developer responsible for the applications and this policy is <strong>Quran Karim | قرآن كريم</strong>. For privacy questions and requests, contact us by email and include the app name and type of request without sending unnecessary sensitive information.</p>
             <div class="contact-card">
-              <div><strong>Privacy and support email</strong><br><span>1995applications@gmail.com</span></div>
-              <a href="mailto:1995applications@gmail.com?subject=Privacy%20Request">Send email</a>
+              <div><strong>Quran Karim | قرآن كريم</strong><br><span>1995applications@gmail.com</span></div>
+              <a href="mailto:1995applications@gmail.com?subject=Privacy%20Request">Send privacy request</a>
             </div>
           </section>
         </article>
@@ -650,7 +1195,7 @@
           <nav class="side-card">
             <h2>On this page</h2>
             <ol class="toc">
-              <li><a href="#en-scope">Scope</a></li>
+              <li><a href="#en-scope">Developer and scope</a></li>
               <li><a href="#en-data">Data</a></li>
               <li><a href="#en-use">Use</a></li>
               <li><a href="#en-permissions">Permissions</a></li>
@@ -669,6 +1214,7 @@
     </div>
 
     <footer>
+      <strong>Quran Karim | قرآن كريم</strong><br>
       <span data-ar="هذه الصفحة لا تستخدم ملفات تعريف الارتباط أو أدوات التتبع." data-en="This page does not use cookies or tracking tools.">هذه الصفحة لا تستخدم ملفات تعريف الارتباط أو أدوات التتبع.</span>
     </footer>
   </main>
@@ -685,7 +1231,9 @@
         const english = language === 'en';
         document.documentElement.lang = english ? 'en' : 'ar';
         document.documentElement.dir = english ? 'ltr' : 'rtl';
-        document.title = english ? 'Privacy Policy' : 'سياسة الخصوصية';
+        document.title = english
+          ? 'Privacy Policy — Quran Karim | قرآن كريم'
+          : 'سياسة الخصوصية — Quran Karim | قرآن كريم';
         arPanel.hidden = english;
         enPanel.hidden = !english;
         arButton.setAttribute('aria-pressed', String(!english));
